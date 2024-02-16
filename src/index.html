@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Custom Whatsapp Message</title>
+</head>
+<body>
+    <header class=" bg-black text-white">
+        <nav class="flex items-center justify-between max-w-screen-xl mx-auto py-4 px-4 md:px-0 relative">
+            <img src="./images/whatsapp logo.png" alt="whatsapp-logo" width="32px">
+
+            <ul id="menu" class="nav-list md:flex items-center gap-5 px-6 py-2 absolute w-fit md:static right-1 bg-black top-16 rounded shadow-lg shadow-gray-700 hidden md:shadow-none transition-all">
+                <li class="nav-item mb-2 md:mb-0">About</li>
+                <li class="nav-item mb-2 md:mb-0">About</li>
+                <li class="nav-item">About</li>
+            </ul>
+            <img src="./images/menu-burger.png" width="16px" id="menu-btn" class="md:hidden cursor-pointer">
+        </nav>
+    </header>
+    <main class="md:grid grid-cols-2 max-w-screen-xl mx-auto px-4">
+        <div class="hero-text py-12 ">
+            <h1 class="md:text-6xl text-5xl text-center md:text-left font-semibold mb-4">Create Custom <span class="text-green-600">Whatsapp</span> Message Links</h1>
+            <p class="text-xl mb-4 text-gray-600 text-center md:text-left">With this tool you can Send users to your Whatsapp DM with a custom message ready to be sent.</p>
+            <form action="">
+                <p id="err-msg" class="text-sm text-red-600 font-bold"></p>
+                <div class="mb-4 mx-auto">
+                    <label for="#number">Your Number Here <span class="text-.[25rem] text-gray-400">optional()</span></label>
+                    <input class="block focus:outline-none focus:border-slate-900 border-2 rounded-lg border-slate-400 p-2 mt-2 text-base" type="text" name="number" id="number" placeholder="+1 888-8888-888">
+                </div>
+                <div>
+                    <label for="#message" class="block">Enter Message</label>
+                    <textarea name="message" id="message" cols="30" rows="3" class="focus:outline-none focus:border-slate-900 border-2 rounded-lg border-slate-400 p-2 mt-2 text-base"></textarea>
+                </div>   
+                <input id="submit" type="submit" value="Get Link" class="p-2 text-white bg-black rounded-lg mt-3 cursor-pointer">  
+                
+                <p data-visible="false" id="success-message" class=" fixed top-10 right-10 w-fit p-2 text-white bg-black rounded-lg shadow-lg shadow-gray-700 opacity-0 data-[visible='true']:translate-y-10 data-[visible='true']:opacity-100 transition-all">Generated and copied to clipboard</p>
+            </form>
+            <div class="mt-4">
+                <h2 class="md:text-3xl text-2xl text-center md:text-left font-semibold mb-2">Generated Links</h2>
+                <ul id="link-list">
+                    <!-- <li class="text-gray-700 p-2 rounded-xl shadow-md border border-gray-200 shadow-slate-200 w-fit">thisissomelink.com</li>
+                    <li class="text-gray-700 p-2 rounded-xl shadow-md border border-gray-200 shadow-slate-200 w-fit">thisissomelink.com</li>
+                    <li class="text-gray-700 p-2 rounded-xl shadow-md border border-gray-200 shadow-slate-200 w-fit">thisissomelink.com</li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="img md:block hidden">
+            <img src="./images/bg-image.png" width="100%" alt="whatsapp interface">
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+<!-- 
+     ADD image -- Done
+     Add Storage feature
+     Integrate link shortening feature
+     Link to other tool and add foremedia monetization
+-->

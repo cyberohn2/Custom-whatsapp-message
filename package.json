@@ -1,0 +1,17 @@
+{
+  "name": "whatsapp-custom-text",
+  "version": "1.0.0",
+  "description": "Custom Whatsapp message tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp"
+  ],
+  "author": "Cyberohn",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
